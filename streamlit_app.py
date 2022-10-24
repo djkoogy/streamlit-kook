@@ -13,5 +13,5 @@ for uploaded_file in uploaded_files:
     st.write("filename:", uploaded_file.name)
     st.write(bytes_data)
 
-df2 = pd.DataFrame(uploaded_file)
+df2 = pd.read_csv(uploaded_file)
 st.dataframe(df2)

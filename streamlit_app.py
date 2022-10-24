@@ -14,4 +14,4 @@ for uploaded_file in uploaded_files:
     st.write(bytes_data)
 
 df2 = pd.DataFrame(uploaded_file)
-df2
+st.dataframe(df2)
